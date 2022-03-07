@@ -32,10 +32,6 @@ body {
     filter: invert(1) hue-rotate(180deg);
 }
 
-.invert, .darkMode {
-    filter: invert(1) hue-rotate(180deg);
-}
-
 footer {
     font-size: 35px;
     font-family: 'Bebas Neue', cursive;
