@@ -10,7 +10,4 @@ let addZero = (num) => num < 10 ? num = "0" + num : num
 updateTime()
 setInterval(updateTime, 1000)
 
-let darkMode = () => { 
-    document.documentElement.classList.toggle("darkMode") 
-    document.querySelectorAll(".noDark").forEach(noDark => noDark.classList.toggle("invert"))
-}
+let darkMode = () => document.documentElement.classList.toggle("darkMode")
