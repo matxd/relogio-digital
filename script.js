@@ -1,11 +1,11 @@
 function updateTime(){
     const display = document.querySelector(".displayClock")
     const info = new Date()
-    const time = addZero(info.getHours()) + ":" + addZero(info.getMinutes()) + ":" + addZero(info.getSeconds())
+    const time = `${addZero(info.getHours())}:${addZero(info.getMinutes())}:${addZero(info.getSeconds())}`
     display.textContent = time
 }
 
-let addZero = (number) => { return number < 10 ? number += "0" : number }
+let addZero = (num) => num < 10 ? num = "0" + num : num
 
 updateTime()
 setInterval(updateTime, 1000)
